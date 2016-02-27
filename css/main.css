@@ -1,0 +1,406 @@
+/********************
+ General styles
+********************/
+
+
+body {
+  margin: 0;
+  padding: 0; 
+  text-align: center;
+  background: white;
+  font-family: "Roboto", sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+  border: none;
+  color: #333;
+}
+
+
+/********************
+ Heading
+********************/
+
+
+.main-header {
+  background: #f7f7f7;
+  padding-top: 1px;
+}
+
+.name {
+  padding: 0.67em;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+
+/********************
+ Navigation
+********************/
+
+
+.main-nav ul {
+  padding: 0 0 35px 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main-nav ul li {
+  list-style: none;
+  background: white;
+  padding: 10px 15px;
+  margin: 5px auto;
+  font: 700 1em/1 "Roboto", sans-serif;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  transition: .3s;
+  color: grey;
+}
+
+
+/********************
+ Banner
+********************/
+
+
+.banner img {
+  width: 70%;
+}
+
+.banner p {
+  color: grey;
+  padding: 10px 20px 50px;
+  font: 100 1em/1.5 "Roboto", sans-serif;
+}
+
+
+/********************
+ Portfolio
+********************/
+
+
+.portfolio {
+  width: 100%;
+  align-content:center;
+  font: 700 .6em/1 "Roboto", sans-serif;
+}
+
+h2 {
+  margin: 40px auto;
+}
+
+
+/********************
+ Projects
+********************/
+
+
+h3 {
+  color: #444;
+  font: 400 1.75em/1 "Roboto", sans-serif;
+}
+
+.project p {
+  padding: 0;
+  width: 75%;
+  color: #444;
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 0;
+  font: 300 1.5em/1.5 "Roboto", sans-serif;
+}
+
+.project-pic{
+  width: 90%;
+  border-radius: 2%;
+}
+
+ .project-pic:hover {
+  box-shadow: 0 10px 15px -7px #666;
+  transition: .3s;
+}
+
+
+/********************
+ Footer
+********************/
+
+
+.wrapper {
+  background:#f7f7f7;
+  padding-bottom: 20px;
+}
+
+h4 {
+  color: #333;
+  padding: 15px 0 10px;
+}
+
+footer {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+footer p {
+  color: #888;
+  font: 100 1em/1.5 "Roboto", sans-serif;
+}
+
+footer ul {
+  list-style: none;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.low-nav {
+  border-top: 1px solid lightgrey;
+}
+
+.contact-info {
+  border: none;
+  line-height: 2;
+  font: 100 1em/1.5 "Roboto", sans-serif;
+}
+
+footer a {
+  color: #333;
+  font: 400 1em/1 "Roboto", sans-serif;
+}
+
+.low-nav {
+  color: #333;
+}
+
+.garret {
+  float:left;
+  font-size: 1em;
+}
+
+.to-top {
+  float: right;
+  font: 700 0.75em/1.5 "Roboto", sans-serif;  
+}
+
+.low-nav-bar {
+  display: none;
+}
+
+
+/********************
+ Media Query (768px)
+********************/
+
+
+@media (min-width: 768px) {
+
+
+  /***Header***/
+
+  .name {
+    padding: 50px 0 30px;
+  }
+
+
+  /***Navigation***/
+
+  .main-nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 10px 10px;
+    width: 15%;
+    background: none;
+  }
+
+
+  /***Banner***/
+
+  .banner p {
+    text-align: left;
+    padding: 0 20px;
+    font-weight: 300;
+  }
+
+  .banner img {
+    width: 38%;
+    float: right;
+    padding: 0 30px 50px 20px;
+  }
+
+
+  /***Projects***/
+
+  .portfolio {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .project{
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+  }
+
+  .project-pic {
+    width: 97%;
+  }
+
+  .project:nth-child(2n+2) {
+    clear: both;
+  }
+
+
+  /***Footer***/
+
+  .wrapper {
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  h4 {
+    font-size: .75em;
+  }
+
+  footer p {
+    width: 70%;
+    margin: 1em auto;
+    font-weight: 300;
+    width: 60%;
+  }
+
+  .to-top {
+    display: none;
+  }
+
+  .nav-bar {
+    margin-right: 0;
+    padding-right: 0;
+    width: 25%;
+  }
+
+  .low-nav-bar {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+  }
+
+  .low-nav-bar li{
+    display: inline;
+    padding-right: 10px
+  }
+
+}
+
+
+/********************
+ Media Query (1024px)
+********************/
+
+
+@media (min-width: 1024px) {
+
+
+  /***Header***/
+
+  .name {
+    padding: 50px 0 30px;
+    float: left;
+    margin: auto 40px;
+  }
+ 
+
+  /***Banner***/
+
+  .banner p {
+    padding: 0 40px;
+    font: 300 1.6em/1.5 "Roboto", sans-serif;
+  }
+
+  .banner img {
+    padding-left: 40px;
+  }
+
+
+ /***Navigation***/
+
+  .main-nav ul {
+    padding-top: 60px;
+    position: absolute;
+    right: 30px;
+    width: auto;
+  }
+
+  .main-nav ul li {
+    margin: 50px 10px 10px;
+    display: inline;
+  }
+
+  .main-nav ul a {
+    padding: 5px;
+    margin-left: 40px;  
+  }
+
+
+  /***Portfolio***/
+
+  h2 {
+    margin: 60px auto;
+  }
+
+
+  /***Projects***/
+
+  h3 {
+    color: #444;
+    font: 400 2em/1 "Roboto", sans-serif;
+  }
+
+  .project{
+    width: 33.3333%;
+    float: left;
+  }
+
+  .project p {
+    width: 90%;
+    font: 400 1.5em/1.5 "Roboto", sans-serif;
+    color: #777;
+  }
+ 
+  .project-pic {
+    width: 95%;
+  }
+  
+  .project:nth-child(2n+2) {
+    clear: none;
+  }
+
+  .project:nth-child(3n+5) {
+    clear: left;
+  }
+
+}
+
+
+/********************
+ Clear-Fix
+********************/
+
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
